@@ -7,9 +7,10 @@ class TextFieldAuthen extends StatelessWidget {
   final bool isPassword;
   final IconData iconData;
   final controller;
+  final function;
 
 
-  TextFieldAuthen({required this.label, required this.isPassword, required this.iconData, required this.controller});
+  TextFieldAuthen({required this.label, required this.isPassword, required this.iconData, required this.controller,required this.function});
 
   @override
   Widget build(BuildContext context) {
@@ -23,11 +24,7 @@ class TextFieldAuthen extends StatelessWidget {
           labelText: label,
         ),
         obscureText: isPassword,
-        validator: (String? value){
-          if(value !.isEmpty){
-            return 'please enter';
-          }
-        },
+        validator: function
       ),
     );
   }

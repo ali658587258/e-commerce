@@ -13,7 +13,7 @@ import '../../service/sp_helper/cache_helper.dart';
 import '../../service/sp_helper/cache_keys.dart';
 
 class UpdateProfileScreen extends StatelessWidget {
-
+  final formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
@@ -30,57 +30,86 @@ class UpdateProfileScreen extends StatelessWidget {
           return Scaffold(
             body: Padding(
               padding:  EdgeInsets.all(20.r),
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Align(
-                          alignment: Alignment.topLeft,
-                          child: IconButton(
-                              onPressed: (){
-                                Navigator.pop(context);
-                              },
-                              icon: Icon(Icons.arrow_back_sharp)
+              child: Form(
+                key: formKey,
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Align(
+                            alignment: Alignment.topLeft,
+                            child: IconButton(
+                                onPressed: (){
+                                  Navigator.pop(context);
+                                },
+                                icon: Icon(Icons.arrow_back_sharp)
+                            ),
                           ),
                         ),
-                      ),
-                      Text('Update Profile',style: TextStyle(fontSize: 22.sp),)
+                        Text('Update Profile',style: TextStyle(fontSize: 22.sp),)
 
-                    ],
-                  ),
+                      ],
+                    ),
 
-                  SizedBox(
-                    height: 100.h,
-                  ),
+                    SizedBox(
+                      height: 100.h,
+                    ),
 
-                  TextFieldAuthen(
-                      label: 'Address',
-                      isPassword: false,
-                      iconData: Icons.home,
-                      controller: cubit.addressController),
-                  TextFieldAuthen(
-                      label: 'Phone',
-                      isPassword: false,
-                      iconData: Icons.phone,
-                      controller: cubit.phoneController),
-                  TextFieldAuthen(
-                      label: 'Password',
-                      isPassword: true,
-                      iconData: Icons.password,
-                      controller: cubit.passwordController),
-                  SizedBox(
-                    height: 50.h,
-                  ),
+                    TextFieldAuthen(
+                        label: 'Address',
+                        isPassword: false,
+                        iconData: Icons.home,
+                        controller: cubit.addressController,
+                        function: (value){
+                          if(value!.isEmpty || !RegExp(r'^[a-z A-Z]+$').hasMatch(value!)){
+                            return "Enter correct address";
+                          }else{
+                            return null;
+                          }
+                        }
+                    ),
+                    TextFieldAuthen(
+                        label: 'Phone',
+                        isPassword: false,
+                        iconData: Icons.phone,
+                        controller: cubit.phoneController,
+                        function: (value){
+                          if(value!.isEmpty || !RegExp(r'^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]+$').hasMatch(value!)){
+                            return "Enter correct phone number";
+                          }else{
+                            return null;
+                          }
+                        }
+                    ),
+                    TextFieldAuthen(
+                        label: 'Password',
+                        isPassword: true,
+                        iconData: Icons.password,
+                        controller: cubit.passwordController,
+                        function: (value){
+                          if(value!.isEmpty || !RegExp(r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$').hasMatch(value!)){
+                            return "Enter correct phone number";
+                          }else{
+                            return null;
+                          }
+                        }
+                    ),
+                    SizedBox(
+                      height: 50.h,
+                    ),
 
-                  MyButton(
-                      'Update Profile',
-                          (){
-                        cubit.updateProfile(id: SharedPreferencesHelper.getData(key: SharedPreferencesKey.id).toString());
-                      }
-                  )
+                    MyButton(
+                        'Update Profile',
+                            (){
+                              if(formKey.currentState!.validate()){
+                                cubit.updateProfile(id: SharedPreferencesHelper.getData(key: SharedPreferencesKey.id).toString());
+                              }
+                        }
+                    )
 
-                ],
+                  ],
+                ),
               ),
             ),
           );
