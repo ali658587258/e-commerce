@@ -1,20 +1,20 @@
-import 'package:commerce/screens/e-commerce/cart_screen.dart';
-import 'package:commerce/screens/e-commerce/contact_us_screenn.dart';
-import 'package:commerce/screens/e-commerce/wish_list_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../blocs/login_out_cubit/login_out_cubit.dart';
-import '../core/toast/toast_config.dart';
-import '../core/utils/naviagtion.dart';
-import '../enums/toast_state.dart';
-import '../screens/Authentication/login_screen.dart';
-import '../screens/e-commerce/about_page_screen.dart';
-import '../screens/e-commerce/categories_screen.dart';
-import '../screens/profile/update_profile_screen.dart';
-import '../src/app_color.dart';
+import '../../blocs/login_out_cubit/login_out_cubit.dart';
+import '../../core/toast/toast_config.dart';
+import '../../core/utils/naviagtion.dart';
+import '../../enums/toast_state.dart';
+import '../../screens/Authentication/login_screen.dart';
+import '../../screens/products/about_page_screen.dart';
+import '../../screens/products/cart_screen.dart';
+import '../../screens/products/categories_screen.dart';
+import '../../screens/setting/contact_us_screenn.dart';
+import '../../screens/products/wish_list_screen.dart';
+import '../../screens/profile/update_profile_screen.dart';
+import '../../src/app_color.dart';
 import 'card_drawer.dart';
 
 class ListDrawer extends StatelessWidget {

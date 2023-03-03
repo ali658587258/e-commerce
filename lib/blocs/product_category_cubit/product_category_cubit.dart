@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:commerce/models/product_category_model.dart';
-import 'package:commerce/models/products_model.dart';
+import 'package:commerce/models/responds/categories/product_category_model.dart';
+import 'package:commerce/models/responds/products/products_model.dart';
 import 'package:commerce/service/dio_helper/dio_helper.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';

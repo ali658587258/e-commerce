@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:onboarding_animation/onboarding_animation.dart';
 
-import '../components/card_on_boarding.dart';
+import '../components/on_boarding/card_on_boarding.dart';
 import '../src/app_color.dart';
 
 

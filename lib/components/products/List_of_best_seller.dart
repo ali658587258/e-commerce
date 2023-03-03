@@ -1,11 +1,11 @@
 import 'package:commerce/blocs/products_cubit/products_cubit.dart';
 import 'package:commerce/core/utils/naviagtion.dart';
-import 'package:commerce/screens/e-commerce/product_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../src/app_color.dart';
+import '../../screens/products/product_screen.dart';
+import '../../src/app_color.dart';
 import 'main_products_container.dart';
 
 class ListOfBestSeller extends StatelessWidget {

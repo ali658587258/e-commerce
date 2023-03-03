@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:commerce/core/utils/naviagtion.dart';
-import 'package:commerce/screens/e-commerce/payment/ref_screen.dart';
-import 'package:commerce/screens/e-commerce/payment/visa_screen.dart';
+import 'package:commerce/screens/payment/ref_screen.dart';
+import 'package:commerce/screens/payment/visa_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

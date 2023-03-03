@@ -2,18 +2,18 @@ import 'package:commerce/blocs/Payment_cubit/cubit/k_y_c_cubit.dart';
 import 'package:commerce/blocs/login_out_cubit/login_out_cubit.dart';
 import 'package:commerce/blocs/products_cubit/products_cubit.dart';
 import 'package:commerce/core/utils/naviagtion.dart';
-import 'package:commerce/screens/e-commerce/cart_screen.dart';
-import 'package:commerce/screens/e-commerce/categories_screen.dart';
 import 'package:commerce/src/app_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../components/List_of_best_seller.dart';
-import '../../components/all_item_grid_view.dart';
-import '../../components/custom_row_slider.dart';
-import '../../components/custom_serch_filed.dart';
-import '../../components/get_all_categories_list.dart';
-import '../../components/list_drawer.dart';
+import '../../components/products/List_of_best_seller.dart';
+import '../../components/products/all_item_grid_view.dart';
+import '../../components/products/custom_row_slider.dart';
+import '../../components/fields/custom_serch_filed.dart';
+import '../../components/categories/get_all_categories_list.dart';
+import '../../components/settings/list_drawer.dart';
+import 'cart_screen.dart';
+import 'categories_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override

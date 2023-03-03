@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../blocs/favorite_cubit/cubit/favorite_cubit.dart';
-import '../blocs/favorite_cubit/is_favorite_cubit/cubit/is_favorite_check_cubit.dart';
-import '../core/toast/toast_config.dart';
-import '../enums/toast_state.dart';
-import '../models/products_model.dart';
-import '../src/app_color.dart';
-import 'add_to_card_button.dart';
-import 'custim_text.dart';
+import '../../blocs/favorite_cubit/cubit/favorite_cubit.dart';
+import '../../blocs/favorite_cubit/is_favorite_cubit/cubit/is_favorite_check_cubit.dart';
+import '../../core/toast/toast_config.dart';
+import '../../enums/toast_state.dart';
+import '../../models/responds/products/products_model.dart';
+import '../../src/app_color.dart';
+import '../card/add_to_card_button.dart';
+import '../custim_text.dart';
 
 class MainProductsContainer extends StatelessWidget {
   Product product;

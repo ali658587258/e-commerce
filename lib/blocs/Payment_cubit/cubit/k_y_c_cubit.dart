@@ -2,7 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
 
-import '../../../models/auth_request_model.dart';
+import '../../../models/responds/auth/auth_request_model.dart';
 import '../../../service/payment_helper.dart';
 import '../../../src/api_constant.dart';
 

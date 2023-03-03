@@ -7,7 +7,7 @@ import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:meta/meta.dart';
 
-import '../../models/authentication.dart';
+import '../../models/responds/auth/authentication.dart';
 import '../../service/sp_helper/cache_helper.dart';
 import '../../service/sp_helper/cache_keys.dart';
 

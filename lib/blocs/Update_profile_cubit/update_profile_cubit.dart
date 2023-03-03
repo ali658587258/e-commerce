@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
 
-import '../../models/authentication.dart';
+import '../../models/responds/auth/authentication.dart';
 import '../../service/sp_helper/cache_helper.dart';
 import '../../service/sp_helper/cache_keys.dart';
 

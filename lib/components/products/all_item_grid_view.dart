@@ -4,12 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../blocs/wish_list_cubit/wish_list_cubit.dart';
-import '../core/toast/toast_config.dart';
-import '../core/utils/naviagtion.dart';
-import '../enums/toast_state.dart';
-import '../screens/e-commerce/product_screen.dart';
-import '../src/app_color.dart';
+import '../../core/utils/naviagtion.dart';
+import '../../screens/products/product_screen.dart';
+import '../../src/app_color.dart';
 import 'main_products_container.dart';
 
 class AllItemGridView extends StatelessWidget {

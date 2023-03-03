@@ -2,7 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
 
-import '../../../../models/products_model.dart';
+import '../../../../models/responds/products/products_model.dart';
 
 part 'is_favorite_check_state.dart';
 

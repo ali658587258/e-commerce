@@ -4,9 +4,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../blocs/company_profile/cubit/company_profile_cubit.dart';
-import '../../components/contact_us_item.dart';
-import '../../components/custom_appBar.dart';
-import '../../components/custom_serch_filed.dart';
+import '../../components/settings/contact_us_item.dart';
+import '../../components/settings/custom_appBar.dart';
+import '../../components/fields/custom_serch_filed.dart';
 import '../../src/app_color.dart';
 
 class ContactUsScreen extends StatelessWidget {

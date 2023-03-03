@@ -4,7 +4,6 @@ import 'package:commerce/components/my_buttom.dart';
 import 'package:commerce/components/my_circle-avatar.dart';
 import 'package:commerce/components/text_field_authen.dart';
 import 'package:commerce/core/utils/naviagtion.dart';
-import 'package:commerce/screens/e-commerce/home_screen.dart';
 import 'package:commerce/screens/Authentication/login_screen.dart';
 import 'package:commerce/src/app_color.dart';
 import 'package:flutter/cupertino.dart';
@@ -14,6 +13,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../core/toast/toast_config.dart';
 import '../../enums/toast_state.dart';
+import '../products/home_screen.dart';
 
 class SignUpScreen extends StatelessWidget {
 

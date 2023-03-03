@@ -3,7 +3,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'card_image.dart';
+import '../on_boarding/card_image.dart';
 
 class CustomRowSlider extends StatelessWidget {
   const CustomRowSlider({super.key});

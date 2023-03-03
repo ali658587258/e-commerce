@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../blocs/add_to_cart/cubit/add_to_cart_cubit.dart';
-import '../core/toast/toast_config.dart';
-import '../enums/toast_state.dart';
-import '../models/products_model.dart';
-import '../src/app_color.dart';
-import 'custom_button.dart';
+import '../../blocs/add_to_cart/cubit/add_to_cart_cubit.dart';
+import '../../core/toast/toast_config.dart';
+import '../../enums/toast_state.dart';
+import '../../models/responds/products/products_model.dart';
+import '../../src/app_color.dart';
+import '../custom_button.dart';
 
 
 class AddToCardButton extends StatelessWidget {

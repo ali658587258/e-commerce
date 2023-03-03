@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
 
-import '../../../models/products_model.dart';
+import '../../../models/responds/products/products_model.dart';
 
 part 'add_to_cart_state.dart';
 

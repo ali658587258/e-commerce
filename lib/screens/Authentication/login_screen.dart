@@ -12,7 +12,7 @@ import '../../core/toast/toast_config.dart';
 import '../../core/utils/naviagtion.dart';
 import '../../enums/toast_state.dart';
 import '../../src/app_color.dart';
-import '../e-commerce/home_screen.dart';
+import '../products/home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
 

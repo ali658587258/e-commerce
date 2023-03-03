@@ -1,6 +1,6 @@
 import 'package:commerce/blocs/products_cubit/products_cubit.dart';
 import 'package:commerce/components/my_buttom.dart';
-import 'package:commerce/models/products_model.dart';
+import 'package:commerce/models/responds/products/products_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../blocs/add_to_cart/cubit/add_to_cart_cubit.dart';
-import '../blocs/favorite_cubit/cubit/favorite_cubit.dart';
-import '../core/toast/toast_config.dart';
-import '../enums/toast_state.dart';
-import '../src/app_color.dart';
-import 'custim_text.dart';
-import 'custom_button.dart';
+import '../../blocs/add_to_cart/cubit/add_to_cart_cubit.dart';
+import '../../blocs/favorite_cubit/cubit/favorite_cubit.dart';
+import '../../core/toast/toast_config.dart';
+import '../../enums/toast_state.dart';
+import '../../src/app_color.dart';
+import '../custim_text.dart';
+import '../custom_button.dart';
 
 class CartItem extends StatelessWidget {
   String? name, image;

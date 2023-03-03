@@ -1,12 +1,12 @@
 import 'package:commerce/core/utils/naviagtion.dart';
-import 'package:commerce/screens/e-commerce/home_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../screens/e-commerce/cart_screen.dart';
-import '../src/app_color.dart';
-import 'custim_text.dart';
+import '../../screens/products/cart_screen.dart';
+import '../../screens/products/home_screen.dart';
+import '../../src/app_color.dart';
+import '../custim_text.dart';
 
 class CustomAppBar extends StatelessWidget {
   String text;

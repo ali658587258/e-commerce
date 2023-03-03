@@ -2,8 +2,8 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
 
-import '../../../models/order_register_model.dart';
-import '../../../models/payment_request_model.dart';
+import '../../../models/responds/payment/order_register_model.dart';
+import '../../../models/responds/payment/payment_request_model.dart';
 import '../../../service/payment_helper.dart';
 import '../../../src/api_constant.dart';
 

@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../src/app_color.dart';
-import 'custim_text.dart';
+import '../../src/app_color.dart';
+import '../custim_text.dart';
 
 class ContactusItem extends StatelessWidget {
   IconData icon;

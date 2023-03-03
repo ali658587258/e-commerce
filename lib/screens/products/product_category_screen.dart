@@ -1,11 +1,11 @@
 import 'package:commerce/blocs/product_category_cubit/product_category_cubit.dart';
-import 'package:commerce/screens/e-commerce/product_screen.dart';
+import 'package:commerce/screens/products/product_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../components/main_products_container.dart';
+import '../../components/products/main_products_container.dart';
 import '../../core/toast/toast_config.dart';
 import '../../core/utils/naviagtion.dart';
 import '../../enums/toast_state.dart';

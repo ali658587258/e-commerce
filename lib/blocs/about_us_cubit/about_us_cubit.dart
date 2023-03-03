@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:commerce/models/about_us.dart';
+import 'package:commerce/models/responds/profile/about_us.dart';
 import 'package:commerce/service/dio_helper/dio_helper.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
